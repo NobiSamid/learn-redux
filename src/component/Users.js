@@ -11,7 +11,7 @@ const Users = ({ usersList, loading, users, error }) => {
       {
           loading ? (<h3>Loading...</h3>) : error ? (<h3>{error}</h3>) : (<div>
           {
-              users.map(user => {
+              users?.map(user => {
                 return (<h4>{user.title}</h4>)
                 })
           }
